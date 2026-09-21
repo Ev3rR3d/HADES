@@ -4,7 +4,6 @@
     <img src="Assets/HADES.png" alt="HADES" width="350"/>
   </p>
   <br/>
-  <em>Hacking Automated Discovery & Exploitation System</em>
   <br/><br/>
   <a href="#quick-start">Quick Start</a> &bull;
   <a href="#features">Features</a> &bull;
