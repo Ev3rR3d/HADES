@@ -1,8 +1,5 @@
 <p align="center">
   <br/>
-  <p align="center">
-    <img src="Assets/HADES.png" alt="HADES" width="300"/>
-  </p>
   <br/>
   <br/><br/>
   <a href="#quick-start">Quick Start</a> &bull;
