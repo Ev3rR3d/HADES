@@ -1,6 +1,6 @@
 <p align="center">
   <br/>
-  <img src="Assets/HADES.png?raw=true" alt="HADES" width="600"/>
+  <img src="Assets/HADES.png?raw=true" alt="HADES" width="300"/>
   <br/>
   <br/><br/>
   <a href="#quick-start">Quick Start</a> &bull;
