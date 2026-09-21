@@ -1,8 +1,8 @@
 <p align="center">
   <br/>
-  <strong>
-    <code style="font-size:2em;">H A D E S</code>
-  </strong>
+  <p align="center">
+    <img src="Assets/HADES.png" alt="HADES" width="600"/>
+  </p>
   <br/>
   <em>Hacking Automated Discovery & Exploitation System</em>
   <br/><br/>
