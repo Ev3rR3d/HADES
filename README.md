@@ -1,7 +1,7 @@
 <p align="center">
   <br/>
   <p align="center">
-    <img src="Assets/HADES.png" alt="HADES" width="350"/>
+    <img src="Assets/HADES.png" alt="HADES" width="300"/>
   </p>
   <br/>
   <br/><br/>
