@@ -264,17 +264,6 @@ HADES/
 └── .gitignore
 ```
 
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| **AI** | Claude (Anthropic) via Claude CLI |
-| **Backend** | Python 3.11+, FastAPI, aiosqlite, uvicorn |
-| **Frontend** | React 19, Vite, Tailwind CSS |
-| **Database** | SQLite (async) |
-| **Comms** | REST API + WebSocket (real-time scan updates) |
-| **Reports** | FPDF2 (PDF generation) |
-| **WAF Bypass** | Headless Chromium via CDP |
 
 ## Security Notes
 
