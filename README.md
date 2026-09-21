@@ -20,22 +20,22 @@
 
 **HADES** is an AI-powered penetration testing platform that orchestrates 35+ security tools through Claude, Anthropic's AI model. It automates reconnaissance, scanning, enumeration, and exploitation workflows while keeping a human operator in the loop for authorization of destructive actions.
 
-Think of it as an AI red-teamer that knows how to chain tools, follow leads, and build a pentest report -- but always asks before doing anything dangerous.
+Think of it as an AI red-teamer that knows how to chain tools, follow leads, and build a pentest report - but always asks before doing anything dangerous.
 
 ## Features
 
-- **AI-Orchestrated Scanning** -- Claude plans and executes multi-round scans, chaining tool outputs as context for the next phase
-- **35+ Integrated Tools** -- From nmap to sqlmap, organized by category (recon, scanning, enumeration, exploitation)
-- **Interactive Chat** -- Talk to Claude mid-scan or post-scan to investigate findings, pivot, or ask questions
-- **Operator Authorization** -- Destructive commands (DELETE, mutations, exploitation) require explicit approval via WebSocket modal
-- **Scan Profiles** -- Pre-built and custom tool sets (Full Scan, Web App, API Only, Auth & SQLi, Recon Only)
-- **Custom Tools** -- Register any CLI binary through the UI with path, args template, and `{target}` placeholder
-- **Live Dashboard** -- Real-time scan progress, findings by severity, tool execution status, token usage
-- **Findings & Leads** -- Structured vulnerability findings with evidence, plus investigation leads for manual follow-up
-- **PDF Reports** -- Auto-generated pentest reports with findings, steps to reproduce, risk scores, and remediation
-- **WAF Bypass** -- Built-in browser-based WAF bypass via headless Chromium for targets behind Cloudflare/Vercel
-- **Project Management** -- Organize targets into projects with scope, sessions, and cross-session analytics
-- **Multi-User Auth** -- JWT-based authentication with admin/operator roles
+- **AI-Orchestrated Scanning** - Claude plans and executes multi-round scans, chaining tool outputs as context for the next phase
+- **35+ Integrated Tools** - From nmap to sqlmap, organized by category (recon, scanning, enumeration, exploitation)
+- **Interactive Chat** - Talk to Claude mid-scan or post-scan to investigate findings, pivot, or ask questions
+- **Operator Authorization** - Destructive commands (DELETE, mutations, exploitation) require explicit approval via WebSocket modal
+- **Scan Profiles** - Pre-built and custom tool sets (Full Scan, Web App, API Only, Auth & SQLi, Recon Only)
+- **Custom Tools** - Register any CLI binary through the UI with path, args template, and `{target}` placeholder
+- **Live Dashboard** - Real-time scan progress, findings by severity, tool execution status, token usage
+- **Findings & Leads** - Structured vulnerability findings with evidence, plus investigation leads for manual follow-up
+- **PDF Reports** - Auto-generated pentest reports with findings, steps to reproduce, risk scores, and remediation
+- **WAF Bypass** - Built-in browser-based WAF bypass via headless Chromium for targets behind Cloudflare/Vercel
+- **Project Management** - Organize targets into projects with scope, sessions, and cross-session analytics
+- **Multi-User Auth** - JWT-based authentication with admin/operator roles
 
 ## Quick Start
 
@@ -125,41 +125,41 @@ After a scan (or in a fresh session), the operator chats directly with Claude. C
 | Tool | Description |
 |---|---|
 | `nmap` | Port scanner with service/version detection |
-| `httpx` | Fast HTTP prober -- status codes, titles, tech detection |
+| `httpx` | Fast HTTP prober - status codes, titles, tech detection |
 | `subfinder` | Passive subdomain discovery |
-| `amass` | Attack surface mapping -- DNS, scraping, APIs, cert transparency |
-| `katana` | Web crawler/spider -- endpoints, JS files, API routes, forms |
-| `whatweb` | Web technology fingerprinting -- CMS, frameworks, servers |
-| `wafw00f` | WAF detection -- identifies WAF/IPS products |
-| `whois` | WHOIS lookup -- registrar, dates, nameservers |
-| `dig` | DNS record lookup -- A, AAAA, MX, NS, TXT, CNAME, SOA |
+| `amass` | Attack surface mapping - DNS, scraping, APIs, cert transparency |
+| `katana` | Web crawler/spider - endpoints, JS files, API routes, forms |
+| `whatweb` | Web technology fingerprinting - CMS, frameworks, servers |
+| `wafw00f` | WAF detection - identifies WAF/IPS products |
+| `whois` | WHOIS lookup - registrar, dates, nameservers |
+| `dig` | DNS record lookup - A, AAAA, MX, NS, TXT, CNAME, SOA |
 | `tech_detect` | HTTP header-based technology detection |
 | `gau` | Fetch known URLs from AlienVault, Wayback, Common Crawl |
 
 ### Scanning
 | Tool | Description |
 |---|---|
-| `nikto` | Web server scanner -- misconfigs, dangerous files, outdated software |
-| `nuclei` | Template-based vulnerability scanner -- CVEs, misconfigs, exposures |
-| `testssl` | TLS/SSL scanner -- protocol support, cipher suites, HEARTBLEED/POODLE |
-| `wpscan` | WordPress scanner -- users, plugins, themes, known vulns |
-| `header_probe` | Security header analysis -- HSTS, CSP, X-Frame-Options |
+| `nikto` | Web server scanner - misconfigs, dangerous files, outdated software |
+| `nuclei` | Template-based vulnerability scanner - CVEs, misconfigs, exposures |
+| `testssl` | TLS/SSL scanner - protocol support, cipher suites, HEARTBLEED/POODLE |
+| `wpscan` | WordPress scanner - users, plugins, themes, known vulns |
+| `header_probe` | Security header analysis - HSTS, CSP, X-Frame-Options |
 
 ### Enumeration
 | Tool | Description |
 |---|---|
-| `ffuf` | Fast web fuzzer -- directories, files, vhosts, parameters |
+| `ffuf` | Fast web fuzzer - directories, files, vhosts, parameters |
 | `gobuster` | Directory/file and DNS subdomain brute-forcer |
 | `feroxbuster` | Recursive content discovery with auto-recursion |
 | `arjun` | Hidden HTTP parameter discovery |
-| `js_analyze` | JavaScript analysis -- secrets, API keys, endpoints |
+| `js_analyze` | JavaScript analysis - secrets, API keys, endpoints |
 
 ### Exploitation
 | Tool | Description |
 |---|---|
 | `sqlmap` | Automated SQL injection scanner |
 | `commix` | OS command injection scanner and exploiter |
-| `dalfox` | XSS scanner -- reflected, stored, DOM-based |
+| `dalfox` | XSS scanner - reflected, stored, DOM-based |
 | `hydra` | Brute-force network logins (SSH, FTP, HTTP) |
 | `xss_probe` | Custom XSS payload testing |
 | `sqli_probe` | SQL injection probe with error/blind/time-based detection |
@@ -169,7 +169,7 @@ After a scan (or in a fresh session), the operator chats directly with Claude. C
 | `redirect_probe` | Open redirect testing |
 | `takeover_probe` | Subdomain takeover detection |
 | `curl` | Flexible HTTP client for manual probing |
-| `wfuzz` | Web application fuzzer -- parameters, directories, headers |
+| `wfuzz` | Web application fuzzer - parameters, directories, headers |
 | `exec` | Direct command execution (with operator approval) |
 
 ## Custom Tools
@@ -212,7 +212,7 @@ Profiles are named sets of allowed tools. When creating a session, select a prof
 | **Auth & SQLi** | 8 tools | Authentication and injection focus |
 | **Recon Only** | 14 tools | Discovery without exploitation |
 
-Create custom profiles through the **Profiles** page -- select tools from the visual catalog and save.
+Create custom profiles through the **Profiles** page - select tools from the visual catalog and save.
 
 ## Configuration
 
