@@ -1,7 +1,7 @@
 <p align="center">
   <br/>
   <p align="center">
-    <img src="Assets/HADES.png" alt="HADES" width="250"/>
+    <img src="Assets/HADES.png" alt="HADES" width="350"/>
   </p>
   <br/>
   <em>Hacking Automated Discovery & Exploitation System</em>
